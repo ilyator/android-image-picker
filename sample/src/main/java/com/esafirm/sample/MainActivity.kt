@@ -8,8 +8,6 @@ import android.os.Environment
 import androidx.appcompat.app.AppCompatActivity
 import com.esafirm.imagepicker.features.*
 import com.esafirm.imagepicker.features.cameraonly.CameraOnlyConfig
-import com.esafirm.imagepicker.features.imageloader.DefaultImageLoader
-import com.esafirm.imagepicker.features.imageloader.ImageLoader
 import com.esafirm.imagepicker.model.Image
 import com.esafirm.sample.databinding.ActivityMainBinding
 
@@ -84,6 +82,7 @@ class MainActivity : AppCompatActivity() {
             folderTitle = "Folder" // folder selection title
             imageTitle = "Tap to select" // image selection title
             doneButtonText = "DONE" // done button text
+            showDoneButtonAlways = true // Show done button always or not
             limit = 10 // max images can be selected (99 by default)
             isShowCamera = true // show camera or not (true by default)
             savePath = ImagePickerSavePath("Camera") // captured image directory name ("Camera" folder by default)
